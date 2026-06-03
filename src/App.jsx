@@ -1,0 +1,40 @@
+import Counter from "./Components/Counter"
+import User from "./Components/User"
+import Digitalclock from "./Components/Digitalclock"
+import Fetchapi from "./Components/Fetchapi"
+import Autosave from "./Components/Autosave"
+import StudentComponent from "./Components/StudentComponent"
+import Productcard from "./Components/Productcard"
+import Controlledinput from "./Components/Controlledinput"
+import Colorpicker from "./Components/Colorpicker"
+import Todoapp from "./Components/Todoapp"
+import Fetchuser from "./Components/Fetchuser"
+import Reactivefetch from "./Components/Reactivefetch"
+import Timer from "./Components/Timer"
+import Localstorage from "./Components/Localstorage"
+function App(){
+
+return(
+  <div>
+    <Localstorage />
+    <Timer />
+    <Reactivefetch />
+    <Fetchuser />
+    <Todoapp />
+    <Counter />
+    <User />
+    <Digitalclock />
+    <Fetchapi />
+    <Autosave />
+    <StudentComponent  name="Abhilash" marks={61} grade="c"/>
+    <StudentComponent  name="Abhilash" marks={90} grade="a"/>
+    <StudentComponent  name="Abhilash" marks={49} grade="f"/>
+
+    <Productcard  name="tcs" price={200} instock={true} />
+    <Productcard  name="zeroda" price={300} instock={false} />
+    <Controlledinput />
+    <Colorpicker />
+  </div>
+)
+}
+export default App;
