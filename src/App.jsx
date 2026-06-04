@@ -12,10 +12,18 @@ import Fetchuser from "./Components/Fetchuser"
 import Reactivefetch from "./Components/Reactivefetch"
 import Timer from "./Components/Timer"
 import Localstorage from "./Components/Localstorage"
+import CounterParent from "./Components/CounterParent"
+import TemperatureConverter from "./Components/TemperatureConverter"
+import SearchParent from "./Components/SearchParent"
+import TodoAppParent from "./Components/TodoAppParent"
 function App(){
 
 return(
   <div>
+    <TodoAppParent />
+    <SearchParent />
+    <TemperatureConverter />
+    <CounterParent />
     <Localstorage />
     <Timer />
     <Reactivefetch />
