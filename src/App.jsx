@@ -5,7 +5,6 @@ import Fetchapi from "./Components/Fetchapi"
 import Autosave from "./Components/Autosave"
 import StudentComponent from "./Components/StudentComponent"
 import Productcard from "./Components/Productcard"
-import Controlledinput from "./Components/Controlledinput"
 import Colorpicker from "./Components/Colorpicker"
 import Todoapp from "./Components/Todoapp"
 import Fetchuser from "./Components/Fetchuser"
@@ -16,10 +15,16 @@ import CounterParent from "./Components/CounterParent"
 import TemperatureConverter from "./Components/TemperatureConverter"
 import SearchParent from "./Components/SearchParent"
 import TodoAppParent from "./Components/TodoAppParent"
+import FetchUrl from "./Components/FetchUrl"
+import LocalStorageh from "./Components/LocalStorageh"
+import Debounce from "./Components/Debounce"
 function App(){
 
 return(
   <div>
+    <Debounce />
+    <LocalStorageh />
+    <FetchUrl />
     <TodoAppParent />
     <SearchParent />
     <TemperatureConverter />
@@ -40,7 +45,7 @@ return(
 
     <Productcard  name="tcs" price={200} instock={true} />
     <Productcard  name="zeroda" price={300} instock={false} />
-    <Controlledinput />
+
     <Colorpicker />
   </div>
 )
