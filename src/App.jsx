@@ -18,10 +18,27 @@ import TodoAppParent from "./Components/TodoAppParent"
 import FetchUrl from "./Components/FetchUrl"
 import LocalStorageh from "./Components/LocalStorageh"
 import Debounce from "./Components/Debounce"
+import {ThemeProvider} from "./Context/ThemeContext" 
+import Nav from "./Components/Nav"
+import {UserProvider} from "./Context/UserContext"
+import NameInput from "./Components/NameInput"
+import NameDisplay from "./Components/NameDisplay"
+import TodoAppc from "./Components/TodoAppc"
+import {TodoProvider} from "./Context/TodoContext" 
 function App(){
 
 return(
   <div>
+    <TodoProvider>
+      <TodoAppc />
+    </TodoProvider>
+    <UserProvider>
+      <NameInput />
+      <NameDisplay />
+    </UserProvider>
+    <ThemeProvider>
+      <Nav />
+    </ThemeProvider>
     <Debounce />
     <LocalStorageh />
     <FetchUrl />
