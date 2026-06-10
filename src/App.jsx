@@ -25,10 +25,20 @@ import NameInput from "./Components/NameInput"
 import NameDisplay from "./Components/NameDisplay"
 import TodoAppc from "./Components/TodoAppc"
 import {TodoProvider} from "./Context/TodoContext" 
+import Autofocus from "./Components/AutoFocus"
+import StopWatch from "./Components/StopWatch"
+import PreviousValue from "./Components/PreviousValue"
+import FilterUsememo from "./Components/FilterUsememo"
+import ParentMemo from "./Components/ParentMemo"
 function App(){
 
 return(
   <div>
+    <ParentMemo />
+    <FilterUsememo />
+    <PreviousValue />
+    <StopWatch />
+    <Autofocus />
     <TodoProvider>
       <TodoAppc />
     </TodoProvider>
