@@ -30,10 +30,12 @@ import StopWatch from "./Components/StopWatch"
 import PreviousValue from "./Components/PreviousValue"
 import FilterUsememo from "./Components/FilterUsememo"
 import ParentMemo from "./Components/ParentMemo"
+import FecthPosts from "./Components/FecthPosts"
 function App(){
 
 return(
   <div>
+    <FecthPosts />
     <ParentMemo />
     <FilterUsememo />
     <PreviousValue />
