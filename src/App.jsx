@@ -31,10 +31,14 @@ import PreviousValue from "./Components/PreviousValue"
 import FilterUsememo from "./Components/FilterUsememo"
 import ParentMemo from "./Components/ParentMemo"
 import FecthPosts from "./Components/FecthPosts"
+import LoginForm from "./Components/LoginForm"
+import RegisterationForm from "./Components/RegisterationForm"
 function App(){
 
 return(
   <div>
+    <RegisterationForm />
+    <LoginForm />
     <FecthPosts />
     <ParentMemo />
     <FilterUsememo />
